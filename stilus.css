@@ -19,14 +19,26 @@ main{
                         "f f";
 
 }
-nav{background-color: rgb(66, 57, 57);}
+nav{background-color: rgb(66, 57, 57);
+    color: red;}
 
 nav li{
     list-style:none;
     border: 1px solid white;
     border-radius: 5px;
+    color: red;
+    
 
 }
+nav a{text-decoration: none;}
+
+nav li:hover {
+    background-color:lightgray;
+}
+nav a:hover{
+    color: white;
+}
+
 
 header{color:beige;
 background-image: url(design/beer-new_401732638.jpg);
