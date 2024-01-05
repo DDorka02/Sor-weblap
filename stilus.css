@@ -11,7 +11,13 @@ main{
     width: 80%;
     max-width: 1000px;
     margin: auto;
-    background-color: rgb(rgb(66, 142, 112), rgb(78, 131, 78), rgb(103, 52, 99));
+    background-color: rgb(rgb(66, 142, 112));
+    display:grid;
+    grid-gap: 20px;   
+    grid-template-areas:"h h"
+                        "a n "
+                        "f f";
+
 }
 nav{background-color: rgb(66, 57, 57);}
 
@@ -30,12 +36,13 @@ font-family: Garamond;
 font-size: 32px;
 margin-top: 30px;
 margin-bottom: 30px;
-
+grid-area: h;
 }
 
 article{
     color: white;
     background-color: black;
+    grid-area: a;
 }
 h1{
     font-size: 15px;
@@ -48,6 +55,7 @@ footer{
     text-align: center;
     color: white;
     padding: 10px;
+    grid-area: f;
 }
 
 th{
@@ -63,3 +71,4 @@ td{
 table{border-collapse:collapse;}
 
 .Masodik{background-color: gray;}
+
